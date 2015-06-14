@@ -116,7 +116,7 @@
     <a href="@Url.Action("Single", "Home", new { id = ap[3].application.Id })">
         <div class="col-md-6 con-sed-grid">
             <div class=" elit-grid">
-                <h4>@ap[3].application.name</h4>
+                <h4 style="text-overflow:ellipsis;white-space:nowrap;overflow:hidden;max-width:140px;">@ap[3].application.name</h4>
                 <label>The Most Popular App</label>
 				<p>This App have highest comments among other Applications</p>
                 <span class="on-get">Get Now</span>
@@ -131,7 +131,7 @@
         <div class="col-md-6 con-sed-grid sed-left-top">
 			<div class=" elit-grid">
 
-				<h4>@ap[4].application.name</h4>
+                <h4 style="text-overflow:ellipsis;white-space:nowrap;overflow:hidden;max-width:120px;">@ap[4].application.name</h4>
 				<label>The Most Popular App</label>
 				<p>This App have highest comments among other Applications</p>
 				<span class="on-get">Get Now</span>
@@ -154,9 +154,9 @@
 
             <div class="col-md-4 chain-grid">
                 <a href="@Url.Action("Single", "Home", new { id=downlaod[0].application.Id})"><img class="img-responsive chain" src="@Url.Content(downlaod[0].application.image1)" style="max-height:255px;max-width:179px" alt=" " /></a>
-                <span class="star"> </span>
+                <span> </span>
                 <div class="grid-chain-bottom">
-                    <h6><a href="@Url.Action("Single", "Home")">@downlaod[0].application.name</a></h6>
+                    <h6 style="text-overflow:ellipsis;white-space:nowrap;overflow:hidden;max-width:200px"><a href="@Url.Action("Single", "Home") ">@downlaod[0].application.name</a></h6>
                     <div class="star-price">
                         <div class="">
                             <span class="rating">
@@ -207,9 +207,9 @@
             </div>
             <div class="col-md-4 chain-grid">
                 <a href="@Url.Action("Single", "Home", new { id = downlaod[1].application.Id })"><img class="img-responsive chain" src="@Url.Content(downlaod[1].application.image1)" style="max-height:255px;max-width:179px" alt=" " /></a>
-                <span class="star"> </span>
+                <span > </span>
                 <div class="grid-chain-bottom">
-                    <h6><a href="@Url.Action("Single", "Home")">@downlaod[1].application.name</a></h6>
+                    <h6 style="text-overflow:ellipsis;white-space:nowrap;overflow:hidden;max-width:240px;"><a href="@Url.Action("Single", "Home")">@downlaod[1].application.name</a></h6>
                     <div class="star-price">
                         <div class="">
                             <span class="rating">
@@ -259,9 +259,9 @@
             </div>
             <div class="col-md-4 chain-grid grid-top-chain">
                 <a href="@Url.Action("Single", "Home", new { id = downlaod[2].application.Id })"><img class="img-responsive chain" src="@Url.Content( downlaod[2].application.image1)" style="max-height:255px;max-width:179px" alt=" " /></a>
-                <span class="star"> </span>
+                <span > </span>
                 <div class="grid-chain-bottom">
-                    <h6><a href="@Url.Action("Single", "Home")">@downlaod[2].application.name</a></h6>
+                    <h6 style="text-overflow:ellipsis;white-space:nowrap;overflow:hidden;max-width:240px;"><a href="@Url.Action("Single", "Home") ">@downlaod[2].application.name</a></h6>
                     <div class="star-price">
                         <div class="">
                             <span class="rating">
@@ -325,7 +325,7 @@
 				<a href="@Url.Action("Single", "Home", new { id=ap[0].application.Id})"><img class="img-responsive chain" src="@Url.Content(ap[0].application.image1)" style="max-height:255px;max-width:179px" alt=" " /></a>
 				<span class="star"> </span>
 				<div class="grid-chain-bottom">
-					<h6><a href="@Url.Action("Single", "Home")">@ap[0].application.name</a></h6>
+                    <h6 style="text-overflow:ellipsis;white-space:nowrap;overflow:hidden;max-width:240px;"><a href="@Url.Action("Single", "Home")">@ap[0].application.name</a></h6>
 					<div class="star-price">
 						<div class="">
 							<span class="rating">
@@ -378,7 +378,7 @@
 			<a href="@Url.Action("Single", "Home", new { id=ap[1].application.Id})"><img class="img-responsive chain" src="@Url.Content(ap[1].application.image1)" style="max-height:255px;max-width:179px" alt=" " /></a>
 			<span class="star"> </span>
 			<div class="grid-chain-bottom">
-				<h6><a href="@Url.Action("Single", "Home")">@ap[1].application.name</a></h6>
+                <h6 style="text-overflow:ellipsis;white-space:nowrap;overflow:hidden;max-width:240px;"><a href="@Url.Action("Single", "Home")">@ap[1].application.name</a></h6>
 				<div class="star-price">
 					<div class="">
 						<span class="rating">
@@ -430,7 +430,7 @@
         <a href="@Url.Action("Single", "Home", new { id=ap[2].application.Id})"><img class="img-responsive chain" src="@Url.Content(ap[2].application.image1)" style="max-height:255px;max-width:179px" alt=" " /></a>
         <span class="star"> </span>
         <div class="grid-chain-bottom">
-            <h6><a href="@Url.Action("Single", "Home")">@ap[2].application.name</a></h6>
+            <h6 style="text-overflow:ellipsis;white-space:nowrap;overflow:hidden;max-width:240px;"><a href="@Url.Action("Single", "Home")">@ap[2].application.name</a></h6>
             <div class="star-price">
                 <div class="">																							  
 					<span class="rating">
