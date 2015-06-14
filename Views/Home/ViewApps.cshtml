@@ -153,18 +153,18 @@
     
         </div>
 
-        <div style="text-align: center">
-            @{ OS = ViewBag.os; var cate = ViewBag.cat; var rat = ViewBag.rating; var a = ViewBag.a; }
-            @Html.PagedListPager((IPagedList)ViewBag.OnePageOfProducts, page => Url.Action("ViewApps", new { os = OS, cat = cate, page = page }))
-        </div>
-        <!---
         <div class="clearfix"> </div>
-        <ul class="pager">
-            <li class="previous"><a href="#">Previous</a></li>
-            <li class="next"><a href="#">Next</a></li>
-        </ul>
-        -->
-    </div>
+            <div style="float:right;padding-right:7%;">
+
+
+                @{ OS = ViewBag.os; var cate = ViewBag.cat; var rat = ViewBag.rating; var a = ViewBag.a; }
+                @Html.PagedListPager((IPagedList)ViewBag.OnePageOfProducts, page => Url.Action("ViewApps", new { os = OS, cat = cate, page = page }))
+
+            </div>
+
+            <div class="clearfix"> </div>
+
+        </div>
 
     <!--Sub categories code-->
 
