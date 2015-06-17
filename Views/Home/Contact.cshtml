@@ -9,7 +9,8 @@
     <div class="account_grid">
         <div class="login-right">
             <h3>Contact Form</h3>
-           @using(Html.BeginForm("SendMail","Home",FormMethod.Post)){
+           @using (Html.BeginForm("SendMail", "Home", FormMethod.Post))
+           {
                 <div>
                     <span>Name<label>*</label></span>
                     <input type="text" class="textbox" name="Name" placeholder="Your Name" required >

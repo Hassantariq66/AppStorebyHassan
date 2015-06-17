@@ -239,12 +239,14 @@
                     <h6>NEWS-LETTER</h6>
                     <div class="sub-left-right">
                         <form action="@Url.Action("subscribe", "Home")" method="post">
+                           <div>
+                            <input type="email" style="height:35px; width:220px;" name="email" placeholder="Email" required/>
                             @if (Session["subscribe"] != null)
                             {
                                 <label style="font-size:10px;color:red;float:left;margin-left:-120px"> @Session["subscribe"] </label>
                                 Session["subscribe"] = null;
                             }
-                            <input type="email" style="height:35px; width:220px;" name="email" value="Enter email here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter email here';}" required/>
+                            </div>
                             <input type="submit" value="SUBSCRIBE" />
                         </form>
                     </div>
