@@ -198,20 +198,20 @@
 
 					<span>First Name<label>*</label></span>
                     @Html.TextBoxFor(m => m.fname)
-                    @Html.ValidationMessageFor(m => m.fname)
+                    @Html.ValidationMessageFor(m => m.fname, String.Empty, new { @style = "color:#01AFD1;!important" })
 					<br>
 					<span>Last Name<label>*</label></span>
                     @Html.TextBoxFor(m => m.lname, new { required = "required" })
-                    @Html.ValidationMessageFor(m => m.lname)
+                    @Html.ValidationMessageFor(m => m.lname, String.Empty, new { @style = "color:#01AFD1;!important" })
 					<br>
 					<span>User Name(must be unique)<label>*</label></span>
 					@Html.TextBoxFor(m => m.username, new { required = "required" })
-                    @Html.ValidationMessageFor(m => m.username)
+                    @Html.ValidationMessageFor(m => m.username, String.Empty, new { @style = "color:#01AFD1;!important" })
                     <label id="usercheck" style="color:#F97E76"> </label>
 					<br>
 					<span>Email Address(must be unique)<label>*</label></span>
                     @Html.EditorFor(m => m.email, new { required = "required" })
-                    @Html.ValidationMessageFor(m => m.email)
+                    @Html.ValidationMessageFor(m => m.email, String.Empty, new { @style = "color:#01AFD1;!important" })
                     <label id="emailcheck" style="color:#F97E76"> </label>
 					<br>
 					<a class="news-letter" href="#">
