@@ -123,29 +123,31 @@
 
             @foreach (Application product in ViewBag.OnePageOfProducts)
 {
-    <div class="product-grid col-lg-4">
-        <div class="content_box ">
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+       
             <div class="left-grid-view grid-view-left">
-                <a href="@Url.Action("Single", "Home",new {id=product.Id})">
+                <div class="content_box ">
+                    <a class="thumbnail" href="@Url.Action("Single", "Home",new {id=product.Id})">
 
-                    <img src="@Url.Content(product.image1)" class=" img-responsive watch-right" style="max-width:210px;max-height:200px;" alt="image" />
-                </a>
-            </div>
-            <div align="center">
-                <h4><a href="@Url.Action("Single", "Home",new {id=product.Id})"> @product.name</a></h4>
+                        <img src="@Url.Content(product.image1)" class=" img-responsive" style="max-width:210px;max-height:200px;" alt="image" />
+                    </a>
 
-                @if (product.desc.ToString().Count() > 50)
-                {
-                    <p style="text-overflow:ellipsis;white-space:nowrap;overflow:hidden;max-width:200px;">@product.desc.Substring(0, 50) ...</p>
-                }
-                else if (product.desc.ToString().Count() > 20)
-                {
-                    <p>@product.desc.Substring(0, 20) ....</p>
-                }
-                else
-                {   <p>@product.name......</p>
-                }
-            </div>
+                    <div align="center">
+                        <h4><a href="@Url.Action("Single", "Home",new {id=product.Id})"> @product.name</a></h4>
+
+                        @if (product.desc.ToString().Count() > 50)
+                        {
+                            <p style="text-overflow:ellipsis;white-space:nowrap;overflow:hidden;max-width:200px;">@product.desc.Substring(0, 50) ...</p>
+                        }
+                        else if (product.desc.ToString().Count() > 20)
+                        {
+                            <p>@product.desc.Substring(0, 20) ....</p>
+                        }
+                        else
+                        {   <p>@product.name......</p>
+                        }
+                    </div>
+                </div>
         </div>
     </div>
 }
