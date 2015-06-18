@@ -23,11 +23,13 @@
                     </thead>
 
 					@foreach(Admin ap in Model){
+                        if(admin.fname.Trim()!=ap.fname.Trim())
+                        { 
 						<tr>
 							<td>@ap.username</td>
 							<td>@ap.email</td>
 							<td>@ap.date</td>
-								@if (@admin.username.Trim().Equals("admin"))
+								@if (admin.username.Trim().Equals("admin"))
 								{ 
 								<td><a href="@Url.Action("UpdateAdmin", "Admin", new { id = ap.Id })"><input type="image" src="~/Content/images/icn_edit.png" name="Id" title="Edit"></a><a href="@Url.Action("DeleteAdmin", "Admin", new { id = ap.Id })"><input type="image" src="~/Content/images/icn_trash.png" title="Trash"></a></td>
 							
@@ -38,7 +40,11 @@
 								}
 								
 						</tr>
-					}
+                        }
+                        else
+                        {
+                        }
+     }
                     <tbody>
                        
                     </tbody>
